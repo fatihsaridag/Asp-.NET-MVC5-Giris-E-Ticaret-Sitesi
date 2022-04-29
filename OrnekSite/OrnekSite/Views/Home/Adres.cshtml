@@ -1,0 +1,36 @@
+﻿ 
+@{
+    ViewBag.Title = "Adres";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home");
+    </div>
+    <div class="span9">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index">Anasayfa</a> <span class="divider">/</span></li>
+            <li class="active">Adres</li>
+        </ul>
+        <div class="well well-small">
+            <h4>Adres: EZO Arge ve inovasyon Şirketi Afyon Kocatepe Üniversitesi, Afyon/Merkez</h4>
+            <h4>Telefon : 212 212 12 12</h4>
+            <hr class="softn clr">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.865820450374!2d30.532223515186725!3d38.81262767958377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cf1873b16fc7eb%3A0xaba48855e092ae08!2sAfyon%20Kocatepe%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1651177064381!5m2!1str!2str" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+    </div>
+</div>
